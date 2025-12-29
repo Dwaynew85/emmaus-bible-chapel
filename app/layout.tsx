@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/navigation/Navbar";
+import Footer from "@/components/navigation/Footer";
 
 export const metadata: Metadata = {
   title: "Emmaus Bible Chapel",
@@ -15,9 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <div className="min-h-screen flex flex-col">
-          {/* Navbar mounts here later */}
+          <Navbar />
           <main className="flex-1">{children}</main>
-          {/* Footer mounts here later */}
+          <Footer />
         </div>
       </body>
     </html>
