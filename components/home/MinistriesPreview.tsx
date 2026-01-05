@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Section from "../layout/Section";
 
 const ministries = [
   {
@@ -17,7 +18,7 @@ const ministries = [
 
 export default function MinistriesPreview() {
   return (
-    <section className="mx-auto max-w-6xl px-6 text-center">
+    <Section className="text-center">
       <h2 className="text-2xl font-semibold text-foreground">
         Our Ministries
       </h2>
@@ -51,6 +52,6 @@ export default function MinistriesPreview() {
           View All Ministries
         </Link>
       </div>
-    </section>
+    </Section>
   );
 }

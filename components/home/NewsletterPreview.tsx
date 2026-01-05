@@ -1,8 +1,10 @@
 "use client";
 
+import Section from "../layout/Section";
+
 export default function NewsletterPreview() {
   return (
-    <section className="mx-auto max-w-4xl px-6 text-center">
+    <Section className="text-center">
       <div>
         <h2 className="text-2xl font-semibold text-foreground">
             Stay Connected
@@ -36,6 +38,6 @@ export default function NewsletterPreview() {
             Newsletter integration coming soon.
         </p>
       </div>
-    </section>
+    </Section>
   );
 }
