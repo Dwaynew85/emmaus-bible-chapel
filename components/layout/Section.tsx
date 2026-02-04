@@ -1,34 +1,26 @@
 import { ReactNode } from "react";
 import Container from "./Container";
 
-type SectionProps = {
+interface SectionProps {
   children: ReactNode;
-  variant?: "content" | "emphasis";
-  containerSize?: "default" | "narrow";
   className?: string;
-};
+  containerSize?: "default" | "narrow";
+}
 
-export default function Section({
-  children,
-  variant = "content",
-  containerSize = "default",
+export default function Section({ 
+  children, 
   className = "",
+  containerSize = "default" 
 }: SectionProps) {
-  if (variant === "emphasis") {
-    return (
-      <section className={`bg-surface ${className}`}>
-        <Container size={containerSize} className="py-20 text-center">
-          {children}
-        </Container>
-      </section>
-    );
-  }
-
   return (
-    <section className={className}>
-      <Container size={containerSize}>
-        {children}
-      </Container>
+    <section className={`page-section ${className}`}>
+      {containerSize === "narrow" ? (
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          {children}
+        </div>
+      ) : (
+        <Container>{children}</Container>
+      )}
     </section>
   );
 }
