@@ -1,26 +1,32 @@
 import { ReactNode } from "react";
-import Container from "./Container";
 
 interface SectionProps {
   children: ReactNode;
   className?: string;
-  containerSize?: "default" | "narrow";
+  spacing?: "none" | "tight" | "comfortable" | "spacious";
+  container?: boolean;
 }
 
 export default function Section({ 
   children, 
   className = "",
-  containerSize = "default" 
+  spacing = "comfortable",
+  container = true 
 }: SectionProps) {
+  const spacingClass = {
+    none: "section-none",
+    tight: "section-tight",
+    comfortable: "section-comfortable",
+    spacious: "section-spacious"
+  }[spacing];
+
+  const content = container ? (
+    <div className="page-container">{children}</div>
+  ) : children;
+
   return (
-    <section className={`page-section ${className}`}>
-      {containerSize === "narrow" ? (
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          {children}
-        </div>
-      ) : (
-        <Container>{children}</Container>
-      )}
+    <section className={`${spacingClass} ${className}`}>
+      {content}
     </section>
   );
 }
