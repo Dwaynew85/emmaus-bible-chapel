@@ -3,10 +3,10 @@ export default function ServiceTimes() {
     <section id="service-times" className="page-section bg-surface">
       <div className="page-container">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold">Join Us for Worship</h2>
+          <h2>Join Us for Worship</h2>
           <div className="mx-auto mt-4 accent-line" />
           
-          <div className="mt-10 grid gap-8 sm:grid-cols-2">
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {/* Sunday Service */}
             <div className="feature-card">
               <div className="icon-badge mb-4">
@@ -24,7 +24,7 @@ export default function ServiceTimes() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Sunday Worship</h3>
+              <h3 className="font-bold">Sunday Worship</h3>
               <p className="mt-2 text-3xl font-bold text-primary">10:00 AM</p>
               <p className="mt-2 text-sm text-muted-foreground">
                 Breaking of Bread & Ministry of the Word
@@ -48,7 +48,7 @@ export default function ServiceTimes() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Bible Study & Prayer</h3>
+              <h3 className="font-bold">Bible Study & Prayer</h3>
               <p className="mt-2 text-3xl font-bold text-primary">7:00 PM</p>
               <p className="mt-2 text-sm text-muted-foreground">
                 Midweek fellowship and study
@@ -56,7 +56,7 @@ export default function ServiceTimes() {
             </div>
           </div>
 
-          <p className="mt-8 text-sm text-muted-foreground">
+          <p className="mt-6 text-sm text-muted-foreground">
             All are welcome to join us. No registration required.
           </p>
         </div>

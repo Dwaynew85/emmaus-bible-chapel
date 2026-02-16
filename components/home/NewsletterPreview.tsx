@@ -37,7 +37,7 @@ export default function NewsletterPreview() {
             </svg>
           </div>
 
-          <h2 className="text-3xl font-bold">Stay Connected</h2>
+          <h2>Stay Connected</h2>
           <div className="mx-auto mt-4 accent-line" />
           <p className="mt-4 text-muted-foreground">
             Subscribe for weekly updates, event announcements, and biblical encouragement delivered to your inbox.

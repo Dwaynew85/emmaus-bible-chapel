@@ -95,17 +95,17 @@ const ministries = [
 
 export default function MinistriesPreview() {
   return (
-    <section className="page-section">
+    <section className="page-section bg-surface">
       <div className="page-container">
         <div className="text-center">
-          <h2 className="text-3xl font-bold">Ways to Grow & Serve</h2>
+          <h2>Ways to Grow & Serve</h2>
           <div className="mx-auto mt-4 accent-line" />
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Opportunities to grow in faith, serve others, and build meaningful community.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {ministries.map((ministry) => (
             <div key={ministry.title} className="feature-card group">
               <div className="icon-badge mb-4 transition-transform group-hover:scale-110">
@@ -119,7 +119,7 @@ export default function MinistriesPreview() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-10 text-center">
           <Link href="/ministries" className="btn btn-secondary">
             Explore All Ministries
           </Link>

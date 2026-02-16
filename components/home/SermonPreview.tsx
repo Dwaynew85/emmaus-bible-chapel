@@ -2,17 +2,17 @@ import Link from "next/link";
 
 export default function SermonPreview() {
   return (
-    <section className="page-section bg-surface">
+    <section className="page-section">
       <div className="page-container">
         <div className="text-center">
-          <h2 className="text-3xl font-bold">Recent Teachings</h2>
+          <h2>Recent Teachings</h2>
           <div className="mx-auto mt-4 accent-line" />
           <p className="mt-4 text-muted-foreground">
             Listen to recent messages from our Sunday gatherings.
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl">
+        <div className="mx-auto mt-10 max-w-3xl">
           {/* Featured Sermon Card */}
           <div className="content-card overflow-hidden">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-start">

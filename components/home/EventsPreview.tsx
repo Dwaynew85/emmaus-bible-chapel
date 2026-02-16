@@ -23,14 +23,14 @@ export default function EventsPreview() {
     <section className="page-section">
       <div className="page-container">
         <div className="text-center">
-          <h2 className="text-3xl font-bold">Upcoming Events</h2>
+          <h2>Upcoming Events</h2>
           <div className="mx-auto mt-4 accent-line" />
           <p className="mt-4 text-muted-foreground">
             Stay connected with gatherings, special events, and opportunities to serve.
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-4xl">
+        <div className="mx-auto mt-10 max-w-4xl">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {upcomingEvents.map((event, idx) => (
               <div key={idx} className="feature-card text-center">
@@ -60,7 +60,7 @@ export default function EventsPreview() {
             ))}
           </div>
 
-          <div className="mt-10 text-center">
+          <div className="mt-8 text-center">
             <Link href="/calendar" className="btn btn-secondary">
               View Full Calendar
             </Link>
